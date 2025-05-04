@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .auth-container {
+      max-width: 400px;
+      margin: 40px auto;
+    }
+    .auth-tabs {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .auth-tab {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      background: #f8f9fa;
+      border: none;
+    }
+    .auth-tab.active {
+      background: #fff;
+      border-bottom: 2px solid #007bff;
+    }
+    .auth-form {
+      display: none;
+    }
+    .auth-form.active {
+      display: block;
+    }
+    .verification-message {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      background: #d4edda;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="auth-container card">
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-form="login">Login</button>
+        <button class="auth-tab" data-form="signup">Sign Up</button>
+        <button class="auth-tab" data-form="forgot">Forgot Password</button>
+      </div>
+
+      <div id="verification-message" class="verification-message">
+        Please check your email for verification link.
+      </div>
+
+      <form id="login-form" class="auth-form active">
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+
+      <form id="signup-form" class="auth-form">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+
+      <form id="forgot-form" class="auth-form">
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Reset Password</button>
+      </form>
+    </div>
+  </div>
+
+  <script src ="../js/login.js"></script>
+</body>
+</html>
