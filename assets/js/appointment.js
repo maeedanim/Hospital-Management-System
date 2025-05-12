@@ -3,24 +3,24 @@
 // Mock data for doctors
 const doctors = {
   cardiology: [
-    { id: 1, name: 'Dr. John Smith' },
-    { id: 2, name: 'Dr. Sarah Johnson' }
+    { id: 1, name: 'Dr. Akib Zobair' },
+    { id: 2, name: 'Dr. Manha' }
   ],
   dermatology: [
-    { id: 3, name: 'Dr. Michael Brown' },
-    { id: 4, name: 'Dr. Emily Davis' }
+    { id: 3, name: 'Dr. Rakibul Islam' },
+    { id: 4, name: 'Dr. Shareen Subha' }
   ],
   neurology: [
-    { id: 5, name: 'Dr. David Wilson' },
-    { id: 6, name: 'Dr. Lisa Anderson' }
+    { id: 5, name: 'Dr. Eshika Biswas' },
+    { id: 6, name: 'Dr. Azra Koshin' }
   ],
   orthopedics: [
-    { id: 7, name: 'Dr. Robert Taylor' },
-    { id: 8, name: 'Dr. Jennifer Martinez' }
+    { id: 7, name: 'Dr. Maeed Ahammed' },
+    { id: 8, name: 'Dr. Shajid Taien' }
   ],
   pediatrics: [
-    { id: 9, name: 'Dr. James White' },
-    { id: 10, name: 'Dr. Maria Garcia' }
+    { id: 9, name: 'Dr. Mahim Ahmed' },
+    { id: 10, name: 'Dr. Ariful Islam' }
   ]
 };
 

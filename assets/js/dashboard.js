@@ -2,32 +2,32 @@
 const appointments = [
   {
     time: '09:00 AM',
-    patient: 'John Smith',
-    doctor: 'Dr. Sarah Johnson',
+    patient: 'Ausmita Shikha Sudipta',
+    doctor: 'Dr. Mofakkar Hossain Mahim',
     type: 'General Checkup'
   },
   {
     time: '10:30 AM',
-    patient: 'Mary Wilson',
-    doctor: 'Dr. Michael Brown',
+    patient: 'Azra Mokarrama Koshin',
+    doctor: 'Dr. Atik',
     type: 'Follow-up'
   },
   {
     time: '11:45 AM',
-    patient: 'Robert Davis',
-    doctor: 'Dr. Emily White',
+    patient: 'Subah Jarin',
+    doctor: 'Dr. Maeed Ahammed',
     type: 'Consultation'
   },
   {
     time: '02:15 PM',
-    patient: 'Patricia Moore',
-    doctor: 'Dr. James Wilson',
+    patient: 'Eshika Biswas',
+    doctor: 'Dr. Anirban',
     type: 'Lab Results Review'
   },
   {
     time: '03:30 PM',
-    patient: 'Michael Taylor',
-    doctor: 'Dr. Sarah Johnson',
+    patient: 'Nazifa',
+    doctor: 'Dr. Asif khan BG',
     type: 'Follow-up'
   }
 ];
@@ -41,7 +41,7 @@ const notifications = [
   },
   {
     type: 'info',
-    message: 'New appointment request from Dr. Brown',
+    message: 'New appointment request from Dr. Akib',
     time: '30 minutes ago'
   },
   {

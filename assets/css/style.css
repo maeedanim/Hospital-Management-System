@@ -3,6 +3,7 @@
 
   /* root color  */
   :root{
+    --green: #07d407;
     --blue:#0188df;
     --black:#444d53;
     --wight:#fff;
@@ -28,20 +29,20 @@
  .button{
     height: 3.5rem;
     width: 15rem;
-    background: var(--blue);
+    background: var(--green);
     color: var(--wight);
     font-size: 1.7rem;
     text-transform: capitalize;
     border-radius: .5rem;
     cursor: pointer;
     margin: 1rem 0;
-    border: .1rem solid var(--blue);
+    border: .1rem solid var(--green);
  }
 
  .button:hover{
-    border: .1rem solid var(--blue);
+    border: .1rem solid var(--green);
     background: var(--wight);
-    color: var(--blue);
+    color: var(--green);
     letter-spacing: .2rem;
  }
 
@@ -51,7 +52,7 @@
     font-size: 4rem;
     padding: 1rem;
     padding-top: 8rem;
-    color: var(--blue);
+    color: var(--green);
     letter-spacing: .1rem;
 }
  /* title  */
@@ -87,7 +88,7 @@
   }
 
   header a:hover{
-    color: var(--blue);
+    color: var(--green);
   }
 
   header .logo{
@@ -95,7 +96,7 @@
   }
 
   header .logo span{
-    color: var(--blue);
+    color: var(--green);
   }
 
   /* navbar link  */
@@ -116,12 +117,12 @@
   }
 
   header .navbar ul li a:hover{
-    color: var(--blue);
+    color: var(--green);
   }
 
  header .fa-bars{
     font-size: 3rem;
-    color: var(--blue);
+    color: var(--green);
     cursor: pointer;
     display: none;
  }
@@ -168,7 +169,7 @@
   }
 
   .home .content h1 span{
-    color: var(--blue);
+    color: var(--green);
   }
 
   .home .content p{
@@ -220,7 +221,7 @@
 
   .about .box-container .box .content h3{
     font-size: 3rem;
-    color: var(--blue);
+    color: var(--green);
     display: flex;
     align-items: start;
   }
@@ -273,7 +274,7 @@
   }
 
   .card .box-container .box .content h2:hover{
-    color: var(--blue);
+    color: var(--green);
     text-decoration: underline;
   }
 
@@ -289,7 +290,7 @@
   
   .card .box-container .box .content .icons a{
     font-size: 2rem;
-    color: var(--blue);
+    color: var(--green);
     text-align: center;
     margin: 1rem;
   }
@@ -331,7 +332,7 @@
   .review .box-container .box i{
     font-size: 6rem ;
     margin-top: -3rem;
-    color: var(--blue);
+    color: var(--green);
     opacity: .4;
   }
 
@@ -343,7 +344,7 @@
   }
 
   .review .box-container .box .info h3{
-    color: var(--blue);
+    color: var(--green);
     font-size: 2rem;
   }
   .review .box-container .box .info span{
@@ -382,7 +383,7 @@
     border-radius: 5rem;
     padding: 0 1rem;
     margin: 1rem 0;
-    color: var(--blue);
+    color: var(--green);
     font-size: 1.7rem;
   }
 
@@ -399,7 +400,7 @@
 
   .contact .row  .form-container input[type="submit"]{
     width: 17rem;
-    background: var(--blue);
+    background: var(--green);
     color: var(--wight);
     cursor: pointer;
     font-size: 2rem;
@@ -407,8 +408,8 @@
 
   .contact .row  .form-container input[type="submit"]:hover{
     background: var(--wight);
-    color: var(--blue);
-    border: .2rem solid var(--blue);
+    color: var(--green);
+    border: .2rem solid var(--green);
   }
   /* contact section end  */
 
@@ -442,11 +443,11 @@
 }
 
 .footer .box .logo:hover{
-  color: var(--blue);
+  color: var(--green);
 }
 
 .footer .box .logo span{
-  color: var(--blue);
+  color: var(--green);
 }
 
 .footer .box p{
@@ -476,7 +477,7 @@
 }
 
 .footer .credit span{
-  color: var(--blue);
+  color: var(--green);
   text-decoration: underline;
   letter-spacing: .5rem;
 }
@@ -594,6 +595,7 @@
 
 
   :root {
+    --green: #07d407;
     --blue: #3498db;
     --white: #fff;
     --black: #333;
@@ -625,7 +627,7 @@
   
   /* Navigation */
   .nav {
-    background-color: var(--blue);
+    background-color: var(--green);
     padding: 1.5rem 0;
   }
   
@@ -649,7 +651,7 @@
   .nav-list li a:hover,
   .nav-list li a.active {
     background-color: var(--white);
-    color: var(--blue);
+    color: var(--green);
   }
   
   /* Heading */
@@ -657,7 +659,7 @@
     text-align: center;
     margin: 3rem 0 1.5rem;
     font-size: 3rem;
-    color: var(--blue);
+    color: var(--green);
   }
   
   /* Form Card */
@@ -674,7 +676,7 @@
   
   .form-section h2 {
     font-size: 2rem;
-    color: var(--blue);
+    color: var(--green);
     margin-bottom: 1.5rem;
   }
   
@@ -707,7 +709,7 @@
   }
   
   .form-control:focus {
-    border-color: var(--blue);
+    border-color: var(--green);
     outline: none;
   }
   
@@ -723,13 +725,13 @@
   
   /* ID Scan Area */
   .id-scan-area {
-    border: 2px dashed var(--blue);
+    border: 2px dashed var(--green);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
     cursor: pointer;
     background: var(--light-gray);
-    color: var(--blue);
+    color: var(--green);
     transition: background 0.3s;
   }
   
@@ -758,14 +760,14 @@
   }
   
   .btn-primary {
-    background-color: var(--blue);
+    background-color: var(--green);
     color: var(--white);
   }
   
   .btn-primary:hover {
     background-color: var(--white);
-    color: var(--blue);
-    border: 2px solid var(--blue);
+    color: var(--green);
+    border: 2px solid var(--green);
   }
   
   /* Responsive */
@@ -821,7 +823,7 @@ h1 {
 .stat-value {
   font-size: 2rem;
   font-weight: bold;
-  color: #007bff;
+  color: black;
   margin: 10px 0;
 }
 
@@ -835,7 +837,7 @@ h1 {
 .quick-link {
   display: block;
   background-color: #eaf4ff;
-  border-left: 5px solid #007bff;
+  border-left: 5px solid var(--green);
   padding: 16px;
   border-radius: 8px;
   text-decoration: none;
@@ -848,7 +850,7 @@ h1 {
 
 .quick-link h4 {
   margin: 0 0 6px;
-  color: #007bff;
+  color:black;;
   font-size: 1.1rem;
 }
 
