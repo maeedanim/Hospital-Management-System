@@ -17,7 +17,7 @@
   <nav class="nav">
     <div class="container">
       <ul class="nav-list">
-        <li><a href="../Landing_Page(index).html">Home</a></li>
+
         <li><a href="dashboard.html" class="active">Dashboard</a></li>
         <li><a href="patient-registration.html">Patients Reg</a></li>
         <li><a href="patient-history.html">Patients History</a></li>
