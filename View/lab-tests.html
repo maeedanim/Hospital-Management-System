@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Tests - Hospital Management System</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a href="../Landing_Page(index).html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="patient-registration.html">Patients Reg</a></li>
+        <li><a href="patient-history.html">Patients History</a></li>
+        <li><a href="doctor-profiles.html">Doctors</a></li>
+        <li><a href="appointment-scheduling.html">Appointments</a></li>
+        <li><a href="lab-tests.html" class="active">Lab Tests</a></li>
+        <li><a href="billing.html">Billing</a></li>
+        <li><a href="prescription-records.html">Prescriptions</a></li>
+        <li><a href="inventory-tracking.html">Inventory</a></li>
+        <li><a href="staff-management.html">Staff</a></li>
+      </ul>
+    </div>
+  <div class="container">
+    <h1>Laboratory Tests</h1>
+
+    <div class="card">
+      <h2>Test Requisition Form</h2>
+      <form id="testRequisitionForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Patient Name</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Patient ID</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Requesting Doctor</label>
+            <input type="text" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="test-grid" id="testSelection"></div>
+
+        <div class="form-group">
+          <label class="form-label">Special Instructions</label>
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Generate Test Request</button>
+      </form>
+
+      <div id="barcodeSection" class="barcode" style="display: none;">
+        <h3>Test Request Barcode</h3>
+        <div id="barcodeDisplay"></div>
+        <p>Scan this barcode at the laboratory</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Test Results</h2>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Test Name</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="resultsTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="resultModal" class="modal">
+    <div class="modal-content card">
+      <span class="close-modal">&times;</span>
+      <div id="resultModalContent"></div>
+    </div>
+  </div>
+
+ <script src="../assets/js/labtests.js"></script>
+
+</body>
+</html>
