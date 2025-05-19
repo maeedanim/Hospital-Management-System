@@ -4,7 +4,7 @@
 const staff = [
   {
     id: 1,
-    name: 'Dr. Akib Zobair',
+    name: 'Dr. Samsun Nahar',
     department: 'medical',
     role: 'doctor',
     license: {

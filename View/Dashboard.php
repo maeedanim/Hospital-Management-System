@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_COOKIE['status'])){
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,3 +107,10 @@
   <script src="../assets/js/dashboard.js"></script>
 </body>
 </html>
+
+<?php
+    }else{
+        header('location: login.html');
+    }
+
+?>
