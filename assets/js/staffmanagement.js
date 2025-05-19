@@ -4,7 +4,7 @@
 const staff = [
   {
     id: 1,
-    name: 'Dr. John Smith',
+    name: 'Dr. Akib Zobair',
     department: 'medical',
     role: 'doctor',
     license: {
@@ -22,7 +22,7 @@ const staff = [
   },
   {
     id: 2,
-    name: 'Sarah Johnson',
+    name: 'Manha',
     department: 'nursing',
     role: 'nurse',
     license: {
@@ -40,7 +40,7 @@ const staff = [
   },
   {
     id: 3,
-    name: 'Mike Wilson',
+    name: 'Shajidul Islam',
     department: 'lab',
     role: 'technician',
     license: {

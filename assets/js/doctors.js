@@ -4,7 +4,7 @@
 const doctors = [
   {
     id: 1,
-    name: 'Dr. John Smith',
+    name: 'Dr. Akib Zobair',
     specialty: 'Cardiology',
     experience: '15 years',
     education: 'MD - Harvard Medical School',
@@ -17,7 +17,7 @@ const doctors = [
   },
   {
     id: 2,
-    name: 'Dr. Sarah Johnson',
+    name: 'Dr. Rakibul Islam',
     specialty: 'Dermatology',
     experience: '10 years',
     education: 'MD - Johns Hopkins University',
@@ -29,7 +29,7 @@ const doctors = [
   },
   {
     id: 3,
-    name: 'Dr. Michael Brown',
+    name: 'Dr. Azra Koshin',
     specialty: 'Neurology',
     experience: '12 years',
     education: 'MD - Stanford University',

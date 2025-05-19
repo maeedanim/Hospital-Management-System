@@ -7,7 +7,7 @@ const patientHistory = [
     type: 'visit',
     date: '2024-01-15',
     title: 'Regular Checkup',
-    doctor: 'Dr. Sarah Johnson',
+    doctor: 'Dr. Akib Zobair',
     notes: 'Patient reported mild fever and cough. Prescribed antibiotics.',
     vitals: {
       temperature: '38.2°C',
@@ -20,7 +20,7 @@ const patientHistory = [
     type: 'test',
     date: '2024-01-10',
     title: 'Blood Test',
-    requestedBy: 'Dr. Michael Brown',
+    requestedBy: 'Dr. Rakibul Islam',
     results: {
       hemoglobin: '14.5 g/dL',
       wbc: '7500/μL',
@@ -32,7 +32,7 @@ const patientHistory = [
     type: 'prescription',
     date: '2024-01-15',
     title: 'Medication Prescribed',
-    doctor: 'Dr. Sarah Johnson',
+    doctor: 'Dr. Shareen Subah',
     medications: [
       { name: 'Amoxicillin', dosage: '500mg', frequency: 'Every 8 hours', duration: '7 days' }
     ]
@@ -42,7 +42,7 @@ const patientHistory = [
     type: 'visit',
     date: '2023-12-20',
     title: 'Follow-up Visit',
-    doctor: 'Dr. John Smith',
+    doctor: 'Dr. Manha',
     notes: 'Patient showing improvement. Continue current medication.',
     vitals: {
       temperature: '37.0°C',

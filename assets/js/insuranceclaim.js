@@ -2,7 +2,7 @@
 const claims = [
   {
     id: 'CLM001',
-    patientName: 'John Doe',
+    patientName: 'Akib Ahmed',
     patientId: 'P12345',
     provider: 'HealthCare Plus',
     amount: 1500,
@@ -16,7 +16,7 @@ const claims = [
   },
   {
     id: 'CLM002',
-    patientName: 'Jane Smith',
+    patientName: 'Nusrat Jahan',
     patientId: 'P12346',
     provider: 'MediCover',
     amount: 2000,
@@ -29,7 +29,7 @@ const claims = [
   },
   {
     id: 'CLM003',
-    patientName: 'Mike Johnson',
+    patientName: 'Fahad Bin',
     patientId: 'P12347',
     provider: 'WellnessGuard',
     amount: 1000,
@@ -105,7 +105,7 @@ function renderClaims() {
 function autoFillForm(patientId) {
   const mockPatientData = {
     P12345: {
-      name: 'John Doe',
+      name: 'Akib Ahmed',
       provider: 'provider1',
       policyNumber: 'POL123456'
     }
