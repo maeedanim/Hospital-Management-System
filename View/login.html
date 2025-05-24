@@ -67,7 +67,7 @@
         <button type="submit" name="submit" value="Submit" class="btn btn-primary">Login</button>
       </form>
 
-      <form id="signup-form" class="auth-form">
+      <form method="post" action="../controller/SignUpCheck.php" id="signup-form" class="auth-form">
         <div class="form-group">
           <label class="form-label">Full Name</label>
           <input type="text" class="form-control" required>
@@ -87,7 +87,7 @@
         <button type="submit" class="btn btn-primary">Sign Up</button>
       </form>
 
-      <form id="forgot-form" class="auth-form">
+      <form method="post" action="../controller/forgotpassword.php" id="forgot-form" class="auth-form">
         <div class="form-group">
           <label class="form-label">Email</label>
           <input type="email" class="form-control" required>

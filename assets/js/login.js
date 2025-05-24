@@ -17,19 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Form submission handling
-  document.querySelectorAll('form').forEach(form => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
+document.querySelectorAll('form').forEach(form => {
+  form.addEventListener('submit', (e) => {
 
-      if (form.id === 'signup-form' || form.id === 'forgot-form') {
-        // Show verification message and reset form
-        document.getElementById('verification-message').style.display = 'block';
-        form.reset();
-      } else if (form.id === 'login-form') {
-        // Redirect to dashboard on login
-        window.location.href = 'dashboard.html';
-      }
-    });
+    if (form.id === 'signup-form' || form.id === 'forgot-form') {
+      e.preventDefault(); // Prevent default only for these forms
+
+      // Show verification message and reset form
+      document.getElementById('verification-message').style.display = 'block';
+      form.reset();
+    }
+
+    // Don't prevent submission for login-form
+    // Let PHP handle validation and redirection
   });
+});
+
 });

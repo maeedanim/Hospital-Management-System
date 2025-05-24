@@ -18,16 +18,16 @@
     <div class="container">
       <ul class="nav-list">
 
-        <li><a href="dashboard.html" class="active">Dashboard</a></li>
-        <li><a href="patient-registration.html">Patients Reg</a></li>
-        <li><a href="patient-history.html">Patients History</a></li>
-        <li><a href="doctor-profiles.html">Doctors</a></li>
-        <li><a href="appointment-scheduling.html">Appointments</a></li>
+        <li><a href="dashboard.php" class="active">Dashboard</a></li>
+        <li><a href="patient-registration.php">Patients Reg</a></li>
+        <li><a href="patient-history.php">Patients History</a></li>
+        <li><a href="doctor-profiles.php">Doctors</a></li>
+        <li><a href="appointment-scheduling.php">Appointments</a></li>
         <li><a href="lab-tests.html">Lab Tests</a></li>
         <li><a href="billing.html">Billing</a></li>
         <li><a href="prescription-records.html">Prescriptions</a></li>
         <li><a href="inventory-tracking.html">Inventory</a></li>
-        <li><a href="staff-management.html">Staff</a></li>
+        <li><a href="staff-management.php">Staff</a></li>
         <li><a href="../controller/logout.php"> Logout </a></li>
       </ul>
     </div>
@@ -60,11 +60,11 @@
     </div>
 
     <div class="quick-links">
-      <a href="patient-registration.html" class="quick-link">
+      <a href="patient-registration.php" class="quick-link">
         <h4>New Patient</h4>
         <p>Register patient</p>
       </a>
-      <a href="appointment-scheduling.html" class="quick-link">
+      <a href="appointment-scheduling.php" class="quick-link">
         <h4>Schedule</h4>
         <p>Book appointment</p>
       </a>
