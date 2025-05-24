@@ -1,22 +1,26 @@
 <?php
+    error_reporting(E_ALL);
     session_start();
-
-    if (isset($_POST['submit'])) {
+    
+    if(isset($_REQUEST['submit'])){
         $username = trim($_POST['username']);
         $password = trim($_POST['password']);
-        $confirmPassword = trim($_POST['confirm_password']); // extra field for confirmation
+        $email = trim($_POST['email']);
 
-        if ($username == "" || $password == "" || $confirmPassword == "") {
-            echo "All fields are required!";
-        } else if ($password !== $confirmPassword) {
-            echo "Passwords do not match!";
-        } else {
-            // Simulate successful signup
-            setcookie('status', 'true', time() + 3000, '/');
-            header('location: home.php');
+        if($username == "" || $password == "" || $email == ""){
+            echo "Null username/password/email!";
+        }else{
+            $con = mysqli_connect('127.0.0.1', 'root', '', 'ecolab_db');
+            $sql = "insert into users values(null, '{$username}', '{$password}','{$email}')";
+            if(mysqli_query($con, $sql)){
+                header('location: ../view/login.html');
+            }else{
+                header('location: ../view/login.html');
+            }
+
         }
-    } else {
-        // Redirect if form wasn't submitted
-        header('location: signup.html');
+    }else{
+         header('location: ../view/login.html');
     }
+
 ?>
