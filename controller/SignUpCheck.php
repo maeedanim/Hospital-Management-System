@@ -1,26 +1,49 @@
 <?php
-    error_reporting(E_ALL);
-    session_start();
-    
-    if(isset($_REQUEST['submit'])){
-        $username = trim($_POST['username']);
-        $password = trim($_POST['password']);
-        $email = trim($_POST['email']);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+require_once('../Model/userModel.php'); 
 
-        if($username == "" || $password == "" || $email == ""){
-            echo "Null username/password/email!";
-        }else{
-            $con = mysqli_connect('127.0.0.1', 'root', '', 'ecolab_db');
-            $sql = "insert into users values(null, '{$username}', '{$password}','{$email}')";
-            if(mysqli_query($con, $sql)){
-                header('location: ../view/login.html');
-            }else{
-                header('location: ../view/login.html');
-            }
+session_start();
 
-        }
-    }else{
-         header('location: ../view/login.html');
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+    echo "Form submitted!<br>";
+
+    $username = trim($_POST['username']);
+    $email = trim($_POST['email']);
+    $password = trim($_POST['password']);
+    $confirm_password = trim($_POST['confirm_password']);
+
+    if ($username == "" || $password == "" || $email == "" || $confirm_password == "") {
+        echo "All fields are required!";
+        exit;
     }
 
-?>
+    if ($password != $confirm_password) {
+        echo "Passwords do not match!";
+        exit;
+    }
+
+    $con = mysqli_connect('127.0.0.1', 'root', '', 'ecolab_db');
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // helpful for debugging
+
+    $sql = "INSERT INTO user_table (user_name, user_email, user_password, user_role)
+        VALUES ('$username', '$email', '$password', 'user')";
+
+echo $sql; // ← ADD THIS LINE to debug
+exit;
+
+
+    if (mysqli_query($con, $sql)) {
+        //header('Location: ../view/login.html');
+        exit;
+    } else {
+        echo "Error: " . mysqli_error($con);
+    }
+
+    mysqli_close($con);
+} else {
+    header('Location: ../view/login.html');
+    exit;
+}
