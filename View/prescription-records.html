@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prescription Records - Hospital Management System</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .prescription-form {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .drug-item {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr auto;
+      gap: 10px;
+      align-items: start;
+      margin-bottom: 10px;
+    }
+    .drug-suggestions {
+      position: absolute;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      max-height: 200px;
+      overflow-y: auto;
+      width: 100%;
+      z-index: 1000;
+      display: none;
+    }
+    .drug-suggestion {
+      padding: 8px;
+      cursor: pointer;
+    }
+    .drug-suggestion:hover {
+      background: #f8f9fa;
+    }
+    .signature-pad {
+      border: 2px dashed #ccc;
+      border-radius: 4px;
+      margin: 20px 0;
+      position: relative;
+    }
+    .signature-pad canvas {
+      width: 100%;
+      height: 200px;
+    }
+    .clear-signature {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    .prescription-preview {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav-list">
+         <li><a href="dashboard.php" >Dashboard</a></li>
+         <li><a href="patient-registration.php">Patients Reg</a></li>
+         <li><a href="doctor-profiles.php">Doctors</a></li>
+         <li><a href="appointment-scheduling.php" >Appointments</a></li>
+         <li><a href="lab-tests.html" >Lab Tests</a></li>
+         <li><a href="billing.html">Billing</a></li>
+         <li><a href="prescription-records.html" class="active">Prescriptions</a></li>
+         <li><a href="../controller/logout.php"> Logout </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>e-Prescription</h1>
+
+    <div class="card prescription-form">
+      <form id="prescriptionForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Patient Name</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Patient ID</label>
+            <input type="text" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Diagnosis</label>
+          <textarea class="form-control" rows="2" required></textarea>
+        </div>
+
+        <div id="drugList">
+          <h3>Medications</h3>
+          <div class="drug-item">
+            <div class="form-group" style="position: relative;">
+              <input type="text" class="form-control drug-search" placeholder="Search medication..." required>
+              <div class="drug-suggestions"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Dosage" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Duration" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addDrugItem()">+</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Instructions</label>
+          <textarea class="form-control" rows="2" required></textarea>
+        </div>
+
+        <div class="signature-pad">
+          <canvas id="signaturePad"></canvas>
+          <button type="button" class="btn btn-primary clear-signature" onclick="clearSignature()">Clear</button>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Generate Prescription</button>
+      </form>
+
+      <div id="prescriptionPreview" class="prescription-preview">
+        <h2>Prescription Preview</h2>
+        <div id="previewContent"></div>
+      </div>
+    </div>
+  </div>
+
+   <script src="../assets/js/prescription-record.js"></script>
+</body>
+</html>
